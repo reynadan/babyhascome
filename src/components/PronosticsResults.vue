@@ -1,14 +1,22 @@
 <script lang="ts" setup>
 import { ref, computed } from 'vue'
 
-
 const mainImages: Record<string, string> = {
-  "La date de naissance": "https://placehold.co/600x400/orange/blue",
-  "L'heure": "https://img.shields.io/badge/%E2%99%82-blue",
+  "La date de naissance": "https://placehold.co/600x400/4f39f6/white?text=il est pas encore la&font=Poppins",
+  "L'heure": "https://placehold.co/600x400/4f39f6/white?text=pas trop tard &font=Poppins",
   "Le poids": "/images/poids_big.png",
   "La taille en cm": "/images/taille_big.png",
   "Le genre du bébé": "/images/genre_big.png",
   "Prénom": "/images/prenom_big.png",
+}
+// Final result à adapter aussi
+const finalResult = {
+  "Le genre du bébé": "On sait pas",
+  "La date de naissance": "On sait pas non plus",
+  "L'heure": "pas trop tard on espere",
+  "La taille en cm": 'pas trop petit',
+  "Le poids": "ni trop fin, ni trop epais",
+  "Prénom": "Bébé Chaton"
 }
 
 // Types
@@ -88,15 +96,7 @@ const statsForSelected = computed(() => {
   return mode(strs)
 })
 
-// Final result à adapter aussi
-const finalResult = {
-  "Le genre du bébé": "Fille",
-  "La date de naissance": "15/09/2025",
-  "L'heure": "03:00:00",
-  "La taille en cm": 51,
-  "Le poids": "3kg500",
-  "Prénom": "Bébé Chaton"
-}
+
 
 async function loadPronostics() {
   const res = await fetch('/data/pronostics.json')
@@ -125,11 +125,12 @@ function markQuestionAsViewed() {
 
       <p class="self-center font-semibold text-lg">{{ selectedQuestion }}</p>
 
-      <button @click="selectedIndex++"
+      <button @click="() => { selectedIndex++; viewMode = 'pronostics' }"
         :disabled="selectedIndex === questions.length - 1 || !viewedQuestions.has(selectedQuestion)"
         class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 disabled:bg-gray-300 disabled:cursor-not-allowed">
         Suivant
       </button>
+
     </div>
 
     <div class="flex gap-4 justify-center mb-6 view-mode-buttons">
