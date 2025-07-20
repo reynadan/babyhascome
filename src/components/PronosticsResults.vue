@@ -99,7 +99,7 @@ const statsForSelected = computed(() => {
 
 
 async function loadPronostics() {
-  const res = await fetch('/data/pronostics.json')
+  const res = await fetch(`${import.meta.env.BASE_URL}data/pronostics.json`)
   pronostics.value = await res.json()
 }
 
