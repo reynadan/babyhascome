@@ -106,39 +106,48 @@ async function loadPronostics() {
 loadPronostics()
 
 const viewMode = ref<'pronostics' | 'stats' | 'result'>('pronostics')
+
+const viewedQuestions = ref<Set<string>>(new Set())
+
+function markQuestionAsViewed() {
+  viewedQuestions.value.add(selectedQuestion.value)
+}
+
 </script>
 
 <template>
-<div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md mt-10 font-sans text-gray-800 container">    <h1 class="text-3xl font-bold mb-6 text-center text-indigo-700">Pronostics Bébé</h1>
+  <div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md mt-10 font-sans text-gray-800 container">
+    <h1 class="text-3xl font-bold mb-6 text-center text-indigo-700">Pronostics Bébé</h1>
 
-  <div class="flex justify-between mb-6 nav-buttons">
-      <button 
-        @click="selectedIndex--" 
-        :disabled="selectedIndex === 0"
-        class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 disabled:bg-gray-300 disabled:cursor-not-allowed"
-      >Précédent</button>
+    <div class="flex justify-between mb-6 nav-buttons">
+      <button @click="selectedIndex--" :disabled="selectedIndex === 0"
+        class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 disabled:bg-gray-300 disabled:cursor-not-allowed">Précédent</button>
 
       <p class="self-center font-semibold text-lg">{{ selectedQuestion }}</p>
 
-      <button 
-        @click="selectedIndex++" 
-        :disabled="selectedIndex === questions.length - 1"
-        class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 disabled:bg-gray-300 disabled:cursor-not-allowed"
-      >Suivant</button>
+      <button @click="selectedIndex++"
+        :disabled="selectedIndex === questions.length - 1 || !viewedQuestions.has(selectedQuestion)"
+        class="px-4 py-2 bg-indigo-500 text-white rounded hover:bg-indigo-600 disabled:bg-gray-300 disabled:cursor-not-allowed">
+        Suivant
+      </button>
     </div>
 
     <div class="flex gap-4 justify-center mb-6 view-mode-buttons">
 
-            <button @click="viewMode = 'pronostics'"
-                    class="px-5 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
->Voir pronostics</button>
-      <button @click="viewMode = 'stats'"
-              class="px-5 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
->Voir moyenne/majorité</button>
-      <button @click="viewMode = 'result'" class="px-5 py-2 rounded transition
+      <button @click="viewMode = 'pronostics'; markQuestionAsViewed()"
+        class="px-5 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">
+        Voir pronostics
+      </button>
+      <button @click="viewMode = 'stats'; markQuestionAsViewed()"
+        class="px-5 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition">
+        Voir moyenne/majorité
+      </button>
+      <button @click="viewMode = 'result'; markQuestionAsViewed()" class="px-5 py-2 rounded transition
           disabled:text-gray-600
-          bg-green-600 text-white hover:bg-green-700">Voir résultat final</button>
-    
+          bg-green-600 text-white hover:bg-green-700">
+        Voir résultat final
+      </button>
+
     </div>
 
     <div v-if="viewMode === 'pronostics'">
@@ -156,11 +165,8 @@ const viewMode = ref<'pronostics' | 'stats' | 'result'>('pronostics')
     <div v-if="viewMode === 'result'">
       <h3>Résultat final :</h3>
       <div v-if="selectedQuestion && mainImages[selectedQuestion]" class="mb-6 flex justify-center">
-        <img 
-          :src="mainImages[selectedQuestion]" 
-          alt="Image principale" 
-          class="max-w-full max-h-64 object-contain rounded-lg shadow-lg"
-        />
+        <img :src="mainImages[selectedQuestion]" alt="Image principale"
+          class="max-w-full max-h-64 object-contain rounded-lg shadow-lg" />
       </div>
       <div class="flex items-center gap-3">
         <p>{{ finalResult[selectedQuestion] }}</p>
