@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #008000; /* Vert */
+  color: white; /* Blanc */
+  scroll-snap-align: start;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  font-size: 14px;
+  animation: bounce 1s infinite;
+  color: white;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
