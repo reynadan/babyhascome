@@ -20,6 +20,15 @@
     <section class="snap-start">
       <PageSix />
     </section>
+    <section class="snap-start">
+      <PageSeven />
+    </section>
+    <section class="snap-start">
+      <PageEight />
+    </section>
+    <section class="snap-start">
+      <PageNine />
+    </section>
   </main>
 </template>
 
@@ -30,7 +39,9 @@ import PageThree from './components/Page3.vue';
 import PageFour from './components/Page4.vue';
 import PageFive from './components/Page5.vue';
 import PageSix from './components/Page6.vue';
-
+import PageSeven from './components/Page7.vue';
+import PageEight from './components/Page8.vue';
+import PageNine from './components/Page9.vue';
 </script>
 
 <style>

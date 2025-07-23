@@ -29,7 +29,7 @@ import 'swiper/css/scrollbar';
 
 
 const photos = [
-  './src/assets/images/photoAlbum1.png',
+  './src/assets/images/photoAlbum1.jpg',
   './src/assets/images/photoAlbum2.png',
   './src/assets/images/photoAlbum3.png',
 ];
