@@ -2,7 +2,7 @@
   <section
     class="min-h-screen bg-green-600 flex flex-col justify-center items-center text-white"
   >
-    <h2 class="text-2xl md:text-4xl mb-4">Nos premières photos</h2>
+    <h2 class="text-2xl md:text-4xl mb-4">L'HEURE FATIDIQUE</h2>
 
     <!-- Slider horizontal -->
     <swiper
@@ -26,8 +26,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const photos = [
-  'https://placehold.co/200x350?text=Photo+1',
-  'https://placehold.co/400x300?text=Photo+2',
-  'https://placehold.co/400x300?text=Photo+3',
+  'https://placehold.co/400x300?text=Pronostiques+date+heure',
+  'https://placehold.co/400x300?text=Date+heure+reelle',
+  'https://placehold.co/400x300?text=Personne+qui+etait+la+plus+proche',
 ];
 </script>

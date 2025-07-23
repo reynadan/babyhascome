@@ -13,7 +13,7 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  background-color: #008000; /* Vert */
+  background-color: #2E6F40; /* Vert */
   color: white; /* Blanc */
   scroll-snap-align: start;
 }
