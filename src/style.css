@@ -13,7 +13,7 @@ body {
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  background-color: #2E6F40; /* Vert */
+  background-color: #368b4ea9; /* Vert */
   color: white; /* Blanc */
   scroll-snap-align: start;
 }
@@ -33,4 +33,75 @@ body {
   50% {
     transform: translateY(-10px);
   }
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #101010;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.wave-text span {
+  display: inline-block;
+  font-size: 4rem;
+  animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.wave-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.wave-text span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.wave-text span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+@keyframes wave {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 2s ease-in 1 forwards;
+  text-align: center;
+}
+
+
+/* better display of arrow on phone */
+@media screen and (max-width: 768px) {
+  .absolute.bottom-4 {
+    bottom: 16px;
+  }
+}
+
+.bg-green-600 {
+  background-color: #228B22;
 }

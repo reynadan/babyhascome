@@ -17,6 +17,9 @@
     <section class="snap-start">
       <PageFive />
     </section>
+    <section class="snap-start">
+      <PageSix />
+    </section>
   </main>
 </template>
 
@@ -26,6 +29,7 @@ import PageTwo from './components/Page2.vue';
 import PageThree from './components/Page3.vue';
 import PageFour from './components/Page4.vue';
 import PageFive from './components/Page5.vue';
+import PageSix from './components/Page6.vue';
 
 </script>
 

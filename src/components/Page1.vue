@@ -1,26 +1,35 @@
 <template>
-<div class="h-screen flex flex-col justify-center items-center bg-green-600 text-white relative">
-    <h1 class="text-4xl md:text-6xl font-bold animate-fadeIn">Baby has come</h1>
+  <div class="h-screen flex flex-col justify-center items-center bg-green-600 text-white relative">
+    <div class="wave-container">
+      <h1 class="wave-text">
+        <span>B</span><span>A</span><span>B</span><span>Y</span>
+      </h1>
+    </div>
+
+    <h1 class="text-4xl md:text-6xl font-bold animate-fadeIn">HAS COME !</h1><br /><br /><br />
+    <h1 class="text-2xl md:text-4xl text-center px-6">
+      Si vous êtes ici, c'est que notre bébé est enfin arrivé.<br /> Avant de découvrir son secret, laissez nous vous
+      raconter son histoire en défilant vers le bas !
+    </h1>
     <div class="absolute bottom-4 animate-bounce text-2xl">⬇</div>
-</div>
+  </div>
 </template>
 
-<script setup lang="ts"></script>
 
-<style scoped>
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.animate-fadeIn {
-  animation: fadeIn 1.5s ease-in-out;
-}
+<script>
+import { onMounted } from "vue";
+import confetti from "canvas-confetti";
 
-/* better display of arrow on phone */
-@media screen and (max-width: 768px) {
-  .absolute.bottom-4 {
-    bottom: 16px; 
-  }
-}
-
-</style>
+export default {
+  setup() {
+    // Déclenche les confettis une fois que la page est montée
+    onMounted(() => {
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
+    });
+  },
+};
+</script>
