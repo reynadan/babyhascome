@@ -4,6 +4,13 @@ body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: white;
+  color: green;
 }
 
 .page {
@@ -14,7 +21,7 @@ body {
   text-align: center;
   min-height: 100vh;
   background-color: #368b4ea9; /* Vert */
-  color: white; /* Blanc */
+  color: blue; /* Blanc */
   scroll-snap-align: start;
 }
 
@@ -36,16 +43,7 @@ body {
 }
 
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background: #101010;
-  color: #fff;
-  font-family: 'Arial', sans-serif;
-}
+
 
 .wave-text span {
   display: inline-block;
@@ -102,6 +100,3 @@ body {
   }
 }
 
-.bg-green-600 {
-  background-color: #228B22;
-}

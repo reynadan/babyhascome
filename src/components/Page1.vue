@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex flex-col justify-center items-center bg-green-600 text-white relative">
+  <div class="h-screen flex flex-col justify-center items-center   relative">
     <div class="wave-container">
       <h1 class="wave-text">
         <span>B</span><span>A</span><span>B</span><span>Y</span>

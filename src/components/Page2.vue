@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen bg-green-600 flex flex-col justify-center items-center text-white">
+  <section class="min-h-screen  flex flex-col justify-center items-center ">
     <h2 class="text-2xl md:text-4xl mb-4">Nos premières photos</h2>
     <!-- Slider horizontal -->
     <swiper :slides-per-view="1" :space-between="10" :pagination="{ clickable: true }" :scrollbar="{ draggable: true }"
