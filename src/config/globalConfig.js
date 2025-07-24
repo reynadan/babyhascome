@@ -1,6 +1,6 @@
-export const estimatedBirthDate = "13/09/2025 à 09h26";
+export const estimatedBirthDate = "13 septembre 2025 à 09h26";
 export const estimatedWeightHeight = "51cm et 3,4kg";
 
-export const birthDate = "XX/XX/2025 à XXhXX";
+export const birthDate = "13 septembre 2025 à 10h";
 export const weightHeight = "XXcm et XXkg";
 export const signeAstro = 'de la / du XXXX';
