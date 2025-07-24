@@ -27,11 +27,15 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+// Import explicit des images
+import photoAlbum1 from '/src/assets/images/photoAlbum1.jpg';
+import photoAlbum2 from '/src/assets/images/photoAlbum2.png';
+import photoAlbum3 from '/src/assets/images/photoAlbum3.png';
 
 const photos = [
-  './src/assets/images/photoAlbum1.jpg',
-  './src/assets/images/photoAlbum2.png',
-  './src/assets/images/photoAlbum3.png',
+  photoAlbum1,
+  photoAlbum2,
+  photoAlbum3,
 ];
 </script>
 
