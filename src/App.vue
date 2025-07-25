@@ -1,7 +1,7 @@
 <template>
   <main
     ref="mainContainer"
-    class="h-screen w-screen overflow-y-scroll snap-y snap-mandatory"
+    class="h-screen w-screen overflow-y-scroll snap-y snap-mandatory max-w-90"
     @scroll="handleScroll"
   >
     <section class="snap-start">

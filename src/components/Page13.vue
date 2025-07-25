@@ -158,9 +158,9 @@ export default defineComponent({
 
 .keyboard {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40px, 0.5fr));
   /* Étend légèrement les boutons */
-  gap: 0.8rem;
+  gap: 0.4rem;
   /* Espacement entre les touches */
 }
 
