@@ -33,9 +33,15 @@ body {
 }
 
 
+.wave-text {
+  display: inline-block;
+  overflow: visible;
+}
+
 .wave-text span {
   display: inline-block;
   animation: wave 2s ease-in-out infinite;
+  line-height: 1;
 }
 
 .wave-text span:nth-child(1) {
