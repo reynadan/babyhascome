@@ -30,6 +30,16 @@ import { defineComponent, computed, reactive } from "vue";
 import confetti from "canvas-confetti";
 import { babyName } from "/src/config/globalConfig.js";
 
+import photoBebePart1 from '/src/assets/images/photoBebePart1.jpg';
+import photoBebePart2 from '/src/assets/images/photoBebePart2.jpg';
+import photoBebePart3 from '/src/assets/images/photoBebePart3.jpg';
+
+import photoWrongLetter1 from '/src/assets/images/photoWrongLetter1.jpg';
+import photoWrongLetter2 from '/src/assets/images/photoWrongLetter2.jpg';
+import photoWrongLetter3 from '/src/assets/images/photoWrongLetter3.jpg';
+
+import photoBebeFull from '/src/assets/images/photoBebeFull.jpg';
+
 export default defineComponent({
   name: "HangmanGame",
   setup() {
@@ -60,15 +70,15 @@ export default defineComponent({
 
         // Déterminer une image aléatoire pour une lettre correcte (parties de bébé)
         const imageOptions = [
-          "src/assets/images/photoBebePart1.jpg",
-          "src/assets/images/photoBebePart2.jpg",
-          "src/assets/images/photoBebePart3.jpg",
+          photoBebePart1,
+          photoBebePart2,
+          photoBebePart3,
         ];
         const randomRightImage = imageOptions[Math.floor(Math.random() * imageOptions.length)];
 
         // Vérifie si le mot entier est trouvé
         if (!discoveredWord.value.includes("_")) {
-          state.feedbackImage = "src/assets/images/photoBebeFull.jpg"; // Image complète (baby)
+          state.feedbackImage = photoBebeFull; // Image complète (baby)
           confetti({
             particleCount: 150,
             spread: 70,
@@ -81,9 +91,9 @@ export default defineComponent({
       } else {
         // Lettre incorrecte
         const imageOptions = [
-          "src/assets/images/photoWrongLetter1.jpg",
-          "src/assets/images/photoWrongLetter2.jpg",
-          "src/assets/images/photoWrongLetter3.jpg",
+          photoWrongLetter1,
+          photoWrongLetter2,
+          photoWrongLetter3,
         ];
         const randomWrongImage = imageOptions[Math.floor(Math.random() * imageOptions.length)];
         state.feedbackImage = randomWrongImage;

@@ -63,7 +63,7 @@
   @click="scrollToTop"
   class="fixed bottom-10 right-1/2 translate-x-1/2 bg-green-800 text-white font-bold py-2 px-4 rounded shadow-lg"
 >
-  Recommencer au début 🡅
+  Recommencer au début
 </button>
 </template>
 
