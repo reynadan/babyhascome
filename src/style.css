@@ -16,18 +16,6 @@ body {
   color: white;
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-  background-color: #368b4ea9; /* Vert */
-  color: blue; /* Blanc */
-  scroll-snap-align: start;
-}
-
 .scroll-indicator {
   position: absolute;
   bottom: 20px;
@@ -44,8 +32,6 @@ body {
     transform: translateY(-10px);
   }
 }
-
-
 
 
 .wave-text span {

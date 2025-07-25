@@ -6,9 +6,23 @@
     <br/>
     <div class="wave-container">
       <h1 class="wave-text text-5xl ms-madi-regular">
-        <span>{{ $birthDate }}</span>
+        <span>{{ birthDate }}</span>
       </h1>
     </div><br/>
-    <p class="text-sm md:text-base opacity-0 fade-in">Né sous le signe {{ $signeAstro }}, et merde.</p>
+    <p class="text-sm md:text-base opacity-0 fade-in">Né sous le signe {{ signeAstro }}, et merde.</p>
   </section>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import { birthDate, signeAstro } from "/src/config/globalConfig";
+
+export default defineComponent({
+  name: "BirthDate",
+  data() {
+    return {
+      birthDate, signeAstro
+    };
+  },
+});
+</script>

@@ -15,8 +15,6 @@
       <span class="material-icons ml-2">arrow_forward</span>
     </div>
     <br/> <br/>
-  <div class="absolute bottom-4 animate-bounce text-2xl">⬇</div>
-
   </section>
 
 </template>
@@ -27,7 +25,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-// Import explicit des images
 import photoAlbum1 from '/src/assets/images/photoAlbum1.jpg';
 import photoAlbum2 from '/src/assets/images/photoAlbum2.png';
 import photoAlbum3 from '/src/assets/images/photoAlbum3.png';

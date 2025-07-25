@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex flex-col justify-center items-center   relative">
+  <div class="h-screen flex flex-col justify-center items-center relative">
     <div class="wave-container">
       <h1 class="wave-text text-9xl	ms-madi-regular">
         <span>B</span><span>a</span><span>B</span><span>y</span>
@@ -11,7 +11,6 @@
       Si vous êtes ici, c'est que notre bébé est enfin arrivé.<br /> Avant de découvrir son secret, laissez nous vous
       raconter son histoire en défilant vers le bas !
     </h1>
-    <div class="absolute bottom-4 animate-bounce text-2xl">⬇</div>
   </div>
 </template>
 

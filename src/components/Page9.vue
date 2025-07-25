@@ -6,10 +6,28 @@
     <br/>
     <div class="wave-container">
       <h1 class="wave-text text-5xl ms-madi-regular">
-        <span>{{ $weightHeight }}</span>
+        <span>{{ size }}</span>
       </h1>
     </div>
     <br/>
     <p class="text-sm md:text-base opacity-0 fade-in">C'est un beau bébé.</p>
+    <br/>
+    <h2 class="text-2xl md:text-4xl mb-4 text-center">
+      Maintenant on passe aux pronostiques sur les prénoms !
+    </h2>
   </section>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import { size } from "/src/config/globalConfig";
+
+export default defineComponent({
+  name: "Size",
+  data() {
+    return {
+      size
+    };
+  },
+});
+</script>
