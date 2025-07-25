@@ -171,15 +171,17 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: #83a166;
 }
 
 button:hover:not(:disabled) {
-  background-color: #1e9aaa;
+  background-color: #baf087;
   /* Effet au survol */
 }
 
 button:disabled {
-  background: #86868673;
+  background-color: #868686;
   cursor: not-allowed;
 }
 </style>

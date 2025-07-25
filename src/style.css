@@ -12,7 +12,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: #368f4fa9;
+  background: #7E8D70;
   color: white;
 }
 
@@ -21,7 +21,6 @@ body {
   bottom: 20px;
   font-size: 14px;
   animation: bounce 1s infinite;
-  color: white;
 }
 
 @keyframes bounce {

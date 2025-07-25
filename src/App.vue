@@ -61,7 +61,7 @@
 <button
   v-show="isLastPage"
   @click="scrollToTop"
-  class="fixed bottom-10 right-1/2 translate-x-1/2 bg-green-800 text-white font-bold py-2 px-4 rounded shadow-lg"
+  class="fixed bottom-10 right-1/2 translate-x-1/2 text-white font-bold py-2 px-4 rounded shadow-lg bg-custom-green"
 >
   Recommencer au début
 </button>
@@ -115,5 +115,8 @@ const scrollToTop = () => {
 <style>
 html {
   scroll-behavior: smooth; /* Active le défilement fluide */
+}
+.bg-custom-green {
+    background-color: #83a166;
 }
 </style>
