@@ -6,9 +6,10 @@
       </h1>
     </div>
 
-    <h1 class="text-4xl md:text-8xl font-bold animate-fadeIn ms-madi-regular">has come !</h1><br /><br /><br />
+    <h1 class="text-4xl md:text-8xl font-bold animate-fadeIn ms-madi-regular">has come !</h1><br/>
+    <h1 class="text-6xl">❤</h1><br/>
     <h1 class="text-2xl md:text-4xl text-center px-6">
-      Si vous êtes ici, c'est que notre bébé est enfin arrivé.<br /> Avant de découvrir son secret, laissez nous vous
+      Si vous êtes ici, c'est que notre bébé est enfin arrivé !<br /> Avant de découvrir son secret, laissez nous vous
       raconter son histoire en défilant vers le bas !
     </h1>
   </div>
