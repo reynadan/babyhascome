@@ -11,6 +11,9 @@
       <PageTwo />
     </section>
     <section class="snap-start">
+      <PageTwoBis />
+    </section>
+    <section class="snap-start">
       <PageThree />
     </section>
     <section class="snap-start">
@@ -70,7 +73,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import PageOne from './components/Page1.vue';
-import PageTwo from './components/Page2.vue';
+import PageTwo from './components/Page2.0.vue';
+import PageTwoBis from './components/Page2.1.vue';
 import PageThree from './components/Page3.vue';
 import PageFour from './components/Page4.vue';
 import PageFive from './components/Page5.vue';

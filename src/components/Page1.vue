@@ -2,7 +2,7 @@
   <div class="h-screen flex flex-col justify-center items-center relative">
     <div class="wave-container">
       <h1 class="wave-text text-9xl	ms-madi-regular">
-        <span>B</span><span>a</span><span>B</span><span>y</span>
+        <span>BaBy</span>
       </h1>
     </div>
 
