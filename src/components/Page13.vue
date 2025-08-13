@@ -7,7 +7,7 @@
       <div class="feedback-image">
         <!-- Image verte, rouge ou orange selon la situation -->
         <img v-if="feedbackImage" :src="feedbackImage" alt="feedback image"
-          class="image w-full rounded-xl h-auto object-fill" />
+          class="image w-full max-h-70 rounded-xl h-auto object-fill" />
       </div>
       <div class="word-display">
         <span v-for="(letter, index) in discoveredWord" :key="index">
