@@ -41,6 +41,9 @@
       <PageEleven />
     </section>
     <section class="snap-start">
+      <PageElevenBis />
+    </section>
+    <section class="snap-start">
       <PageTwelve />
     </section>
     <section class="snap-start">
@@ -73,8 +76,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import PageOne from './components/Page1.vue';
-import PageTwo from './components/Page2.0.vue';
-import PageTwoBis from './components/Page2.1.vue';
+import PageTwo from './components/Page2.0.vue'; // album vie a deux
+import PageTwoBis from './components/Page2.1.vue'; // album grossesse
 import PageThree from './components/Page3.vue';
 import PageFour from './components/Page4.vue';
 import PageFive from './components/Page5.vue';
@@ -83,7 +86,8 @@ import PageSeven from './components/Page7.vue';
 import PageEight from './components/Page8.vue';
 import PageNine from './components/Page9.vue';
 import PageTen from './components/Page10.vue';
-import PageEleven from './components/Page11.vue';
+import PageEleven from './components/Page11.0.vue';
+import PageElevenBis from './components/Page11.1.vue';
 import PageTwelve from './components/Page12.vue';
 import PageThirteen from './components/Page13.vue'; // pendu
 import PageFourteen from './components/Page14.vue';
