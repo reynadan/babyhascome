@@ -9,7 +9,11 @@
         <span>{{ birthDate }}</span>
       </h1>
     </div><br/>
-    <p class="text-sm md:text-base opacity-0 fade-in">Né sous le signe {{ signeAstro }}, et merde.</p>
+    <p class="text-sm md:text-base opacity-0 fade-in">
+      Né sous le signe {{ signeAstro }}, et merde.<br/>
+      Florentina a trouvé l'heure la plus proche avec 20:12 !<br/>
+      Pour la date bravo à Amelie, Ophelia et Mel (la maman) :)
+    </p>
   </section>
 </template>
 

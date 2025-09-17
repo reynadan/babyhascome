@@ -10,7 +10,11 @@
       </h1>
     </div>
     <br/>
-    <p class="text-sm md:text-base opacity-0 fade-in">C'est un beau bébé.</p>
+    <p class="text-sm md:text-base opacity-0 fade-in">
+      C'est un beau bébé.<br/>
+      Papa a trouvé la bonne taille ! (futur ngapeth)<br/>
+      Adeline a été la plus proche pour le poids : 3,810 kg
+    </p>
     <br/>
     <h2 class="text-2xl md:text-4xl mb-4 text-center">
       Maintenant on passe aux pronostiques sur les prénoms !
