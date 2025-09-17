@@ -26,7 +26,7 @@ import photoAlbum12 from '/src/assets/images/album2/photoAlbum12.png';
 import photoAlbum13 from '/src/assets/images/album2/photoAlbum13.png';
 import photoAlbum14 from '/src/assets/images/album2/photoAlbum14.png';
 import photoAlbum15 from '/src/assets/images/album2/photoAlbum15.svg';
-
+import photoAlbum16 from '/src/assets/images/album2/photoAlbum16.png';
 
 const photos = [
   photoAlbum8,
@@ -36,7 +36,8 @@ const photos = [
   photoAlbum12,
   photoAlbum13,
   photoAlbum14,
-  photoAlbum15
+  photoAlbum15,
+  photoAlbum16
 ];
 </script>
 

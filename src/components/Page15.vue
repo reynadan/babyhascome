@@ -5,7 +5,7 @@
     <!-- Conteneur pour l'image -->
     <div class="w-full max-w-sm">
       <img
-        src="/src/assets/images/photoBebeFull.jpg"
+        src="/src/assets/images/photoBebeFull.png"
         alt="Description de l'image"
         class="w-full object-cover rounded-lg shadow-lg"
       />

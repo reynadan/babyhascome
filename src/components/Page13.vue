@@ -33,12 +33,14 @@ import { babyName } from "/src/config/globalConfig.js";
 import photoBebePart1 from '/src/assets/images/photoBebePart1.jpg';
 import photoBebePart2 from '/src/assets/images/photoBebePart2.jpg';
 import photoBebePart3 from '/src/assets/images/photoBebePart3.jpg';
+import photoBebePart4 from '/src/assets/images/photoBebePart4.jpg';
 
 import photoWrongLetter1 from '/src/assets/images/photoWrongLetter1.jpg';
 import photoWrongLetter2 from '/src/assets/images/photoWrongLetter2.jpg';
 import photoWrongLetter3 from '/src/assets/images/photoWrongLetter3.jpg';
+import photoWrongLetter4 from '/src/assets/images/photoWrongLetter4.jpg';
 
-import photoBebeFull from '/src/assets/images/photoBebeFull.jpg';
+import photoBebeFull from '/src/assets/images/photoBebeFull.png';
 
 export default defineComponent({
   name: "HangmanGame",
@@ -73,6 +75,7 @@ export default defineComponent({
           photoBebePart1,
           photoBebePart2,
           photoBebePart3,
+          photoBebePart4
         ];
         const randomRightImage = imageOptions[Math.floor(Math.random() * imageOptions.length)];
 
@@ -94,6 +97,7 @@ export default defineComponent({
           photoWrongLetter1,
           photoWrongLetter2,
           photoWrongLetter3,
+          photoWrongLetter4,
         ];
         const randomWrongImage = imageOptions[Math.floor(Math.random() * imageOptions.length)];
         state.feedbackImage = randomWrongImage;
